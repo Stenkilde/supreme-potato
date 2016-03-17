@@ -4,5 +4,10 @@ In this readme we will have a roadmap of what is required to finish the proper b
 
 ## Roadmap
 
-- [ ] for an empty checkbox
-- [x] for a checked checkbox
+- [ ] Stock Viewer
+- [ ] Parse Calendar
+- [ ] Image of you(To remember how handsome you are)
+- [ ] RSS Feeder
+- [ ] Twitch Chat Feeder
+- [x] Weather API
+- [x] Compliment API
