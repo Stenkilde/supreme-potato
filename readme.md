@@ -4,4 +4,5 @@ In this readme we will have a roadmap of what is required to finish the proper b
 
 ## Roadmap
 
-- [] Test
+- [ ] for an empty checkbox
+- [x] for a checked checkbox
