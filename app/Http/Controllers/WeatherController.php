@@ -18,6 +18,12 @@ class WeatherController extends Controller
         return view('weather.create');
     }
 
+    public function single() {
+        // This should be changed
+        $weathers = Weather::find(5);
+        return ($weathers);
+    }
+
     public function store() {
         $input = Request::all();
 

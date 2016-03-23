@@ -4,6 +4,7 @@ In this readme we will have a roadmap of what is required to finish the proper b
 
 ## Roadmap
 
+- [ ] Dashboard with proper widgets
 - [ ] Stock Viewer
 - [ ] Parse Calendar
 - [ ] Image of you(To remember how handsome you are)

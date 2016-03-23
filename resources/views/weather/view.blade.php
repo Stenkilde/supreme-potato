@@ -9,6 +9,7 @@
             <span>API_KEY</span>: {{$weather->API_KEY}}
         </p>
         <span class="meta__text">Keep this a secret</span>
+        <p>Is this active: {{$weather->is_active}}</p>
     @endforeach
 @endsection
 
