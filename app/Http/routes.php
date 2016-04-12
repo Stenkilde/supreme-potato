@@ -19,12 +19,10 @@ Route::get('/roadmap', ['uses' => 'PagesController@roadmap', 'as' => 'home.roadm
 Route::get('compliments', ['uses' => 'PagesController@compliment', 'as' => 'pages.compliments']);
 
 // Weather
-Route::group(['middleware' => 'cors'], function(Router $router){
-  Route::get('weather/view', ['uses' => 'WeatherController@index', 'as' => 'weather.view']);
-  Route::get('weather/create', ['uses' => 'WeatherController@create', 'as' => 'weather.add']);
-  Route::get('weather/active', ['uses' => 'WeatherController@single', 'as' => 'weather.single']);
-  Route::post('weathers', ['uses' => 'WeatherController@store', 'as' => 'weather.create']);
-}
+Route::get('weather/view', ['middleware' => 'cors', 'uses' => 'WeatherController@index', 'as' => 'weather.view']);
+Route::get('weather/create', ['middleware' => 'cors', 'uses' => 'WeatherController@create', 'as' => 'weather.add']);
+Route::get('weather/active', ['middleware' => 'cors', 'uses' => 'WeatherController@single', 'as' => 'weather.single']);
+Route::post('weathers', ['uses' => 'WeatherController@store', 'as' => 'weather.create']);
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
